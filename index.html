@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sahra Privacy Policy</title>
+<meta name="description" content="Privacy policy for Sahra (سهرة), a quiet campfire night with friends over live voice.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf5ec;
+    --surface: #fffaf2;
+    --text: #2b2118;
+    --muted: #6b5a49;
+    --accent: #b5651d;
+    --rule: #e6d8c3;
+    --code-bg: #f1e6d4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14100d;
+      --surface: #1d1712;
+      --text: #f3e6d2;
+      --muted: #bba78e;
+      --accent: #f0a25a;
+      --rule: #3a2e24;
+      --code-bg: #2a211a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14100d;
+    --surface: #1d1712;
+    --text: #f3e6d2;
+    --muted: #bba78e;
+    --accent: #f0a25a;
+    --rule: #3a2e24;
+    --code-bg: #2a211a;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Tajawal", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  header.top { text-align: center; padding-bottom: 8px; }
+  header.top .mark { font-size: 40px; line-height: 1; }
+  header.top h1 { margin: 8px 0 4px; font-size: 28px; font-weight: 700; }
+  header.top p { margin: 0; color: var(--muted); }
+  nav.lang {
+    display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;
+    margin: 20px 0 8px;
+  }
+  nav.lang a {
+    display: inline-block; padding: 6px 16px; border: 1px solid var(--rule);
+    border-radius: 999px; color: var(--text); text-decoration: none;
+    background: var(--surface);
+  }
+  nav.lang a:hover, nav.lang a:focus-visible { border-color: var(--accent); }
+  section.policy {
+    background: var(--surface); border: 1px solid var(--rule);
+    border-radius: 16px; padding: 8px 20px 24px; margin-top: 24px;
+  }
+  h2 { font-size: 22px; margin: 24px 0 8px; }
+  h3 { font-size: 18px; margin: 22px 0 6px; color: var(--accent); }
+  p, li { overflow-wrap: anywhere; }
+  ul { padding-inline-start: 22px; margin: 8px 0; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.88em; background: var(--code-bg); padding: 1px 5px;
+    border-radius: 4px; direction: ltr; unicode-bidi: isolate;
+  }
+  .summary {
+    border-inline-start: 3px solid var(--accent);
+    padding: 4px 14px; margin: 16px 0;
+  }
+  .meta { color: var(--muted); font-size: 15px; }
+  [dir="rtl"] { font-size: 18px; line-height: 1.8; }
+  [dir="rtl"] code { font-size: 0.82em; }
+  footer { text-align: center; color: var(--muted); font-size: 14px; margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="mark" aria-hidden="true">🔥</div>
+  <h1>Sahra <span lang="ar">· سهرة</span></h1>
+  <p>Privacy Policy <span lang="ar" dir="rtl">· سياسة الخصوصية</span></p>
+  <nav class="lang" aria-label="Language">
+    <a href="#en" hreflang="en">English</a>
+    <a href="#ar" hreflang="ar" lang="ar">العربية</a>
+  </nav>
+</header>
+
+<!-- ============================== ENGLISH ============================== -->
+<section class="policy" id="en" lang="en" dir="ltr">
+  <h2>Privacy Policy</h2>
+  <p class="meta">Effective date: 16 November 2026</p>
+
+  <div class="summary">
+    <p><strong>The short version.</strong> Sahra has no accounts: no email, no phone number, no password. Your voice goes straight to your friends' phones, encrypted, and is never recorded or stored, by us or anyone else. Your name and robe colour live on your phone and are sent only to the people sitting at the same fire. There are no ads, no analytics, no tracking and no crash reporting.</p>
+  </div>
+
+  <p>Sahra (سهرة) is a quiet campfire night in the desert: two to eight friends sit around a fire, talk over live voice, add wood and brew tea. This page explains, plainly, what the app does with information about you. "We" means the developer of Sahra.</p>
+
+  <h3>1. What the app handles, and why</h3>
+  <ul>
+    <li><strong>An anonymous ID.</strong> The first time you start or join a sahra, the app signs in to Google Firebase anonymously. Firebase gives your install a random ID. It is not linked to your name, email, phone number or any other account. Firebase keeps a record of that ID with the time it was created and last used. We need it so the database can check that people only change their own entries.</li>
+    <li><strong>Who is in a room.</strong> While you are in a sahra, a small record in our Firebase database (Cloud Firestore) lists the people in it, at most eight. For each person it holds only the anonymous ID, a random ID for this visit, and the server time of the last check-in (the app checks in every 5 minutes). The record also holds the time the room was created and, if a stale entry was cleared, the anonymous ID that was cleared. <em>Your name, robe colour and voice are not in it.</em></li>
+    <li><strong>Connection handshakes.</strong> For two phones to find each other, they exchange short technical messages (the WebRTC "offer", "answer" and network candidates). These include the network addresses (IP addresses and ports) your phone can be reached at. They pass through the same database, addressed to one person in your room, who reads and deletes them, normally within a second.</li>
+    <li><strong>Your name, robe colour and shemagh.</strong> You choose these when you first open the app. They are saved on your phone and sent directly to the phones of the people in your sahra, over an encrypted connection, so they can see you by the fire. They are not stored on any server.</li>
+    <li><strong>Your voice.</strong> The microphone is used only while you are in a sahra. Your voice goes directly to each friend's phone, encrypted (DTLS-SRTP, the standard WebRTC encryption). It is not recorded or saved anywhere. When you mute, your phone sends silence instead.</li>
+    <li><strong>What happens at the fire.</strong> Adding wood, the tea, gestures, tea offers and who is muted travel directly between the phones in the room, encrypted. Each phone keeps them in memory only while the sahra lasts.</li>
+    <li><strong>Settings on your phone.</strong> Your name, robe colour, shemagh, language, push-to-talk, lo-fi music and ambience volume are saved on your phone only. The volume you set for each friend is kept in memory until the app closes.</li>
+    <li><strong>Motion sensor.</strong> The app reads the phone's tilt to move the view very slightly. This stays on your phone and is never sent.</li>
+  </ul>
+
+  <h3>2. Where it goes</h3>
+  <ul>
+    <li><strong>The people in your sahra.</strong> They receive your name, robe colour, shemagh, voice and what you do at the fire. When phones connect directly, which is how most calls work, each phone also learns the other phones' IP addresses. Share your room code only with people you want there.</li>
+    <li><strong>Google Firebase</strong> (Firebase Authentication and Cloud Firestore, run by Google): the anonymous ID, room presence and connection handshakes described above, sent over encrypted connections (TLS). Like any internet service, Google sees the IP address your phone connects from. See <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy and security</a>.</li>
+    <li><strong>Metered relay</strong> (<a href="https://www.metered.ca" rel="noopener">metered.ca</a>): when two phones cannot reach each other directly (common on mobile networks), the call passes through a relay server run by Metered (<code>global.relay.metered.ca</code>). The relay only forwards encrypted packets. It cannot decrypt your voice or anything else; it sees the IP addresses of the two phones and how much data passes.</li>
+    <li><strong>Google public STUN servers</strong> (<code>stun.l.google.com</code>): your phone asks them "what is my public address?" so friends can reach it. They see your IP address and nothing else.</li>
+  </ul>
+  <p>These providers may process data in countries other than yours. We do not sell, rent or share information with anyone else, and we do not use it for advertising.</p>
+
+  <h3>3. How long it is kept</h3>
+  <ul>
+    <li><strong>Voice:</strong> not kept at all.</li>
+    <li><strong>Room activity</strong> (fire, tea, gestures): in memory on the phones in the room, gone when the app closes.</li>
+    <li><strong>Profile and settings on your phone:</strong> until you change them, clear the app's data, or uninstall.</li>
+    <li><strong>Room presence:</strong> your entry is removed when you leave, and the whole room record is deleted when the last person leaves. If the app closes abruptly (a crash, a dead battery), your entry stays until someone in that room, or the next person to open that code, clears it, which the app does once it has gone 16 minutes without a check-in. If nobody ever opens that code again, the leftover room record (anonymous IDs and times only) can stay on the server; there is currently no automatic expiry for room records.</li>
+    <li><strong>Connection handshakes:</strong> deleted by the person they were sent to as soon as they arrive, normally within a second. When you leave, the app also clears anything left in your inbox. If an app closes abruptly, leftover messages are deleted the next time that person joins the same room. We are adding an automatic server-side expiry for any that remain; until that is switched on, a leftover can stay on the server if that person never returns to that room.</li>
+    <li><strong>Anonymous ID:</strong> kept on your phone until you uninstall the app or clear its data, and in Firebase Authentication until it is deleted. Once the app is gone from your phone, nothing links that record to you.</li>
+  </ul>
+
+  <h3>4. What we never collect</h3>
+  <ul>
+    <li>Email, phone number, real name (you choose any name you like), or password.</li>
+    <li>Recordings of any kind. There is no text chat.</li>
+    <li>Your contacts, photos, files or precise location.</li>
+    <li>Advertising IDs, analytics, crash reports or any tracking. There are no ads and nothing to buy.</li>
+  </ul>
+
+  <h3>5. Your choices</h3>
+  <ul>
+    <li>Mute yourself at any time, or use push-to-talk.</li>
+    <li>Say no to the microphone and still join to listen.</li>
+    <li>Turn down any friend's voice, all the way, from the settings sheet. This only changes what you hear.</li>
+    <li>Leave a sahra whenever you like. There is no public list of rooms: nobody can find yours without its code or invite link.</li>
+    <li>Change your name or robe colour at any time. Uninstalling the app removes everything it saved on your phone.</li>
+  </ul>
+
+  <h3>6. Permissions on Android</h3>
+  <ul>
+    <li><strong>Microphone</strong>, so your friends can hear you.</li>
+    <li><strong>Notifications</strong>, to show the ongoing "Sitting by the fire" notice that keeps your voice running while the screen is off. It disappears when you leave.</li>
+    <li><strong>Nearby devices (Bluetooth connect)</strong>, to use Bluetooth headsets.</li>
+    <li>Internet and network state, keeping the phone awake during a sahra, and vibration for a gentle tap when wood is added or the fire is poked.</li>
+  </ul>
+
+  <h3>7. Children</h3>
+  <p>Sahra is not made for children under 13, and we do not knowingly collect information from them. Because there are no accounts, we hold nothing that tells us anyone's age. If you believe a child has used Sahra, the information above is all there is; write to us and we will help.</p>
+
+  <h3>8. Security</h3>
+  <p>Everything Sahra sends is encrypted in transit: TLS to Firebase, and DTLS-SRTP between phones, including through the relay. The database rules only let people change their own entries, and rooms cannot be listed or searched. No system is perfectly secure, but we keep what exists to the minimum above.</p>
+
+  <h3>9. Changes</h3>
+  <p>If this policy changes, we will update this page and its effective date, and mention important changes in the app's update notes.</p>
+
+  <h3>10. Contact</h3>
+  <p>Questions or requests: <strong>samerzmd@gmail.com</strong></p>
+</section>
+
+<!-- ============================== ARABIC ============================== -->
+<section class="policy" id="ar" lang="ar" dir="rtl">
+  <h2>سياسة الخصوصية</h2>
+  <p class="meta">تاريخ السريان: ١٦ تشرين الثاني (نوفمبر) ٢٠٢٦</p>
+
+  <div class="summary">
+    <p><strong>باختصار.</strong> لا توجد في سهرة حسابات: لا بريد إلكتروني ولا رقم هاتف ولا كلمة مرور. يصل صوتك مباشرةً إلى هواتف أصحابك مشفّرًا، ولا يُسجَّل ولا يُحفَظ أبدًا، لا عندنا ولا عند غيرنا. اسمك ولون ثوبك محفوظان على هاتفك، ولا يُرسَلان إلا إلى من يجلس معك حول النار نفسها. لا إعلانات، ولا تحليلات، ولا تتبّع، ولا تقارير أعطال.</p>
+  </div>
+
+  <p>سهرة ليلة هادئة حول النار في الصحراء: من اثنين إلى ثمانية أصحاب يجلسون حول النار، يتحدثون بالصوت مباشرةً، ويضيفون الحطب ويعدّون الشاي. توضّح هذه الصفحة ببساطة ما يفعله التطبيق بالمعلومات المتعلقة بك. وكلمة "نحن" تعني مطوّر سهرة.</p>
+
+  <h3>١. ما يتعامل معه التطبيق، ولماذا</h3>
+  <ul>
+    <li><strong>معرّف مجهول.</strong> عند بدء سهرة أو الانضمام إليها أول مرة، يسجّل التطبيق دخولًا مجهول الهوية إلى خدمة Google Firebase، فتمنح نسختك من التطبيق معرّفًا عشوائيًا. هذا المعرّف غير مرتبط باسمك ولا ببريدك ولا برقم هاتفك ولا بأي حساب آخر. تحتفظ Firebase بسجل لهذا المعرّف مع وقت إنشائه وآخر استخدام له. نحتاجه كي تتحقق قاعدة البيانات من أن كل شخص لا يغيّر إلا بياناته هو.</li>
+    <li><strong>من الموجود في الغرفة.</strong> ما دمت في سهرة، يوجد سجل صغير في قاعدة بياناتنا على Firebase (Cloud Firestore) يذكر الموجودين فيها، ثمانية على الأكثر. ولا يحمل لكل شخص إلا المعرّف المجهول، ومعرّفًا عشوائيًا لهذه الزيارة، ووقت آخر تسجيل حضور بتوقيت الخادم (يسجّل التطبيق حضورك كل ٥ دقائق). ويحمل السجل أيضًا وقت إنشاء الغرفة، وإن أُزيل إدخال قديم متروك، يحمل المعرّف المجهول الذي أُزيل. <em>اسمك ولون ثوبك وصوتك ليست فيه.</em></li>
+    <li><strong>رسائل المصافحة للاتصال.</strong> حتى يجد هاتفان أحدهما الآخر، يتبادلان رسائل تقنية قصيرة (عرض WebRTC والرد عليه وعناوين الاتصال المرشّحة). وتتضمن عناوين الشبكة (عناوين IP والمنافذ) التي يمكن الوصول إلى هاتفك عبرها. تمر هذه الرسائل عبر قاعدة البيانات نفسها، موجّهةً إلى شخص واحد في غرفتك، يقرؤها ثم يحذفها، عادةً خلال ثانية.</li>
+    <li><strong>اسمك ولون ثوبك والشماغ.</strong> تختارها عند فتح التطبيق أول مرة. تُحفظ على هاتفك، وتُرسَل مباشرةً إلى هواتف الموجودين في سهرتك عبر اتصال مشفّر، حتى يروك حول النار. ولا تُخزَّن على أي خادم.</li>
+    <li><strong>صوتك.</strong> لا يُستخدم الميكروفون إلا وأنت في سهرة. يذهب صوتك مباشرةً إلى هاتف كل صاحب، مشفّرًا (بتقنية DTLS-SRTP، التشفير المعتمد في WebRTC). لا يُسجَّل ولا يُحفَظ في أي مكان. وعندما تكتم الميكروفون، يرسل هاتفك صمتًا بدل صوتك.</li>
+    <li><strong>ما يجري حول النار.</strong> إضافة الحطب، والشاي، والحركات، وعزومات الشاي، ومن كتم الميكروفون: كلها تنتقل مباشرةً بين الهواتف في الغرفة مشفّرةً. ويحتفظ بها كل هاتف في الذاكرة فقط طوال السهرة.</li>
+    <li><strong>إعداداتك على هاتفك.</strong> اسمك، ولون ثوبك، والشماغ، واللغة، وخيار "اضغط لتحكي"، وموسيقى اللو-فاي، ومستوى صوت الأجواء: كلها محفوظة على هاتفك فقط. أما مستوى الصوت الذي تختاره لكل صاحب، فيبقى في الذاكرة حتى يُغلق التطبيق.</li>
+    <li><strong>مستشعر الحركة.</strong> يقرأ التطبيق ميلان الهاتف ليحرّك المشهد حركة خفيفة جدًا. يبقى ذلك على هاتفك ولا يُرسَل أبدًا.</li>
+  </ul>
+
+  <h3>٢. إلى أين تذهب</h3>
+  <ul>
+    <li><strong>الموجودون في سهرتك.</strong> يصلهم اسمك ولون ثوبك والشماغ وصوتك وما تفعله حول النار. وعندما تتصل الهواتف مباشرةً، وهذا حال معظم المكالمات، يعرف كل هاتف عناوين IP للهواتف الأخرى. لذلك لا تشارك كود سهرتك إلا مع من تريده معك.</li>
+    <li><strong>Google Firebase</strong> (خدمتا Firebase Authentication وCloud Firestore، تديرهما Google): المعرّف المجهول وبيانات الحضور ورسائل المصافحة المذكورة أعلاه، تُرسَل عبر اتصالات مشفّرة (TLS). وكأي خدمة على الإنترنت، ترى Google عنوان IP الذي يتصل منه هاتفك. للمزيد: <a href="https://firebase.google.com/support/privacy" rel="noopener">الخصوصية والأمان في Firebase</a>.</li>
+    <li><strong>خادم الترحيل من Metered</strong> (<a href="https://www.metered.ca" rel="noopener">metered.ca</a>): عندما يتعذّر على هاتفين الاتصال مباشرةً (وهذا شائع على شبكات الهاتف المحمول)، تمر المكالمة عبر خادم ترحيل تديره شركة Metered (<code>global.relay.metered.ca</code>). خادم الترحيل يمرّر حزمًا مشفّرة فقط، ولا يستطيع فك تشفير صوتك ولا أي شيء آخر؛ يرى فقط عناوين IP للهاتفين وحجم البيانات المارّة.</li>
+    <li><strong>خوادم STUN العامة من Google</strong> (<code>stun.l.google.com</code>): يسألها هاتفك "ما عنواني العام؟" حتى يتمكن أصحابك من الوصول إليه. ترى عنوان IP الخاص بك ولا شيء غيره.</li>
+  </ul>
+  <p>قد يعالج هؤلاء المزوّدون البيانات في دول غير دولتك. نحن لا نبيع المعلومات ولا نؤجّرها ولا نشاركها مع أي جهة أخرى، ولا نستخدمها للإعلانات.</p>
+
+  <h3>٣. مدة الاحتفاظ</h3>
+  <ul>
+    <li><strong>الصوت:</strong> لا يُحتفَظ به إطلاقًا.</li>
+    <li><strong>ما يجري في الغرفة</strong> (النار، الشاي، الحركات): في ذاكرة الهواتف الموجودة في الغرفة، ويزول عند إغلاق التطبيق.</li>
+    <li><strong>ملفك وإعداداتك على هاتفك:</strong> حتى تغيّرها، أو تمسح بيانات التطبيق، أو تحذفه.</li>
+    <li><strong>بيانات الحضور:</strong> يُزال إدخالك عندما تغادر، ويُحذف سجل الغرفة كله عندما يغادر آخر شخص. وإذا أُغلق التطبيق فجأة (عطل، أو نفاد البطارية)، يبقى إدخالك حتى يزيله أحد الموجودين في تلك الغرفة أو أول من يفتح ذلك الكود بعدك، ويفعل التطبيق ذلك بعد مرور ١٦ دقيقة دون تسجيل حضور. وإن لم يفتح أحد ذلك الكود مرة أخرى، فقد يبقى سجل الغرفة المتروك (معرّفات مجهولة وأوقات فقط) على الخادم؛ إذ لا يوجد حاليًا حذف تلقائي لسجلات الغرف.</li>
+    <li><strong>رسائل المصافحة:</strong> يحذفها الشخص الموجّهة إليه فور وصولها، عادةً خلال ثانية. وعندما تغادر، يمسح التطبيق أيضًا ما تبقّى في صندوق رسائلك. وإذا أُغلق تطبيق فجأة، تُحذف الرسائل المتبقية في المرة التالية التي ينضم فيها ذلك الشخص إلى الغرفة نفسها. ونعمل على إضافة حذف تلقائي على الخادم لما قد يتبقّى؛ وإلى أن يُفعَّل، قد تبقى رسالة متروكة على الخادم إن لم يعد صاحبها إلى تلك الغرفة.</li>
+    <li><strong>المعرّف المجهول:</strong> يبقى على هاتفك حتى تحذف التطبيق أو تمسح بياناته، ويبقى في Firebase Authentication حتى يُحذف. وبعد حذف التطبيق من هاتفك، لا يبقى ما يربط ذلك السجل بك.</li>
+  </ul>
+
+  <h3>٤. ما لا نجمعه أبدًا</h3>
+  <ul>
+    <li>البريد الإلكتروني، أو رقم الهاتف، أو اسمك الحقيقي (تختار أي اسم تحب)، أو كلمة مرور.</li>
+    <li>أي تسجيلات من أي نوع. ولا توجد دردشة نصية.</li>
+    <li>جهات اتصالك، أو صورك، أو ملفاتك، أو موقعك الدقيق.</li>
+    <li>معرّفات الإعلانات، أو التحليلات، أو تقارير الأعطال، أو أي تتبّع. لا إعلانات ولا مشتريات.</li>
+  </ul>
+
+  <h3>٥. خياراتك</h3>
+  <ul>
+    <li>اكتم الميكروفون متى شئت، أو استخدم "اضغط لتحكي".</li>
+    <li>ارفض إذن الميكروفون وانضم مستمعًا فقط.</li>
+    <li>اخفض صوت أي صاحب، حتى إسكاته تمامًا، من صفحة الإعدادات. هذا يغيّر ما تسمعه أنت فقط.</li>
+    <li>غادر السهرة متى أردت. لا توجد قائمة عامة بالغرف: لا يستطيع أحد العثور على غرفتك دون كودها أو رابط الدعوة.</li>
+    <li>غيّر اسمك أو لون ثوبك متى شئت. وحذف التطبيق يزيل كل ما حفظه على هاتفك.</li>
+  </ul>
+
+  <h3>٦. الأذونات على أندرويد</h3>
+  <ul>
+    <li><strong>الميكروفون</strong>، ليسمعك أصحابك.</li>
+    <li><strong>الإشعارات</strong>، لعرض إشعار "قاعدين عند النار" الدائم الذي يُبقي صوتك يعمل والشاشة مطفأة. ويختفي عندما تغادر.</li>
+    <li><strong>الأجهزة القريبة (اتصال البلوتوث)</strong>، لاستخدام سماعات البلوتوث.</li>
+    <li>الإنترنت وحالة الشبكة، وإبقاء الهاتف مستيقظًا خلال السهرة، والاهتزاز لنقرة خفيفة عند إضافة الحطب أو تحريك النار.</li>
+  </ul>
+
+  <h3>٧. الأطفال</h3>
+  <p>سهرة ليست موجّهة للأطفال دون ١٣ عامًا، ولا نجمع عن قصد معلومات عنهم. ولأنه لا توجد حسابات، فلا نملك ما يدلّنا على عمر أي شخص. إن كنت تعتقد أن طفلًا استخدم سهرة، فالمعلومات المذكورة أعلاه هي كل ما هناك؛ راسلنا وسنساعدك.</p>
+
+  <h3>٨. الأمان</h3>
+  <p>كل ما ترسله سهرة مشفّر أثناء النقل: TLS إلى Firebase، وDTLS-SRTP بين الهواتف، بما في ذلك عبر خادم الترحيل. قواعد قاعدة البيانات لا تسمح لأحد إلا بتغيير بياناته هو، ولا يمكن سرد الغرف أو البحث عنها. لا يوجد نظام آمن تمامًا، لكننا نُبقي ما هو موجود عند الحد الأدنى المذكور أعلاه.</p>
+
+  <h3>٩. التغييرات</h3>
+  <p>إذا تغيّرت هذه السياسة، سنحدّث هذه الصفحة وتاريخ سريانها، ونذكر التغييرات المهمة في ملاحظات تحديث التطبيق.</p>
+
+  <h3>١٠. التواصل</h3>
+  <p>للأسئلة أو الطلبات: <strong dir="ltr">samerzmd@gmail.com</strong></p>
+</section>
+
+<footer>Sahra · سهرة</footer>
+</div>
+</body>
+</html>
